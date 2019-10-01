@@ -1,0 +1,52 @@
+<div fxLayout="column" fxLayoutAlign="space-around center" fxFlex="100" fxFlexFill>
+  <div class="header">
+    <div 
+    fxLayout="row" 
+    fxLayoutAlign="start center" 
+    fxLayout.xs="column" 
+    fxLayoutAlign.xs="center center" 
+    fxLayoutGap.gt-xs="10px"
+    class="inner-header" ngClass.xs="mobile-header">
+      <div fxFlex="30" class="image-side" ngClass.xs="hide-on-device">
+        <img src="https://www.freepngimg.com/thumb/rainbow/26-rainbow-png-image.png" alt="">
+      </div>
+
+      <div fxFlex.gt-xs="50" fxFlex.xs="100" class="text-center info-message">
+        <h2>Neat Weather</h2>
+        <p>Protect yourself from the unknown and unforeseen weather condition, 5 mega city, 5 days forecast.</p>
+        <p>Select a city below to get start</p>
+
+        <a mat-fab href="#cities" color="warn">
+          <mat-icon class="mat-18">keyboard_arrow_down</mat-icon>
+        </a>
+      </div>
+
+      <div fxFlex="30" class="image-side"  ngClass.xs="hide-on-device">
+          <img src="https://marketplace.canva.com/MAC1DNzseMg/1/thumbnail_large/canva-abstract-weather-symbol-MAC1DNzseMg.png" alt="">
+        </div>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="text-center">Europe Mega Cities</h1>
+      <div id="cities" 
+      fxLayout="row wrap" 
+      fxLayoutAlign="center center" 
+      fxLayoutGap="10px"
+
+      fxLayout.xs="column"
+      fxLayoutAlign.xs="center stretch">
+          <mat-card class="example-card" *ngFor="let state of states" fxFlex="18" [routerLink]="['weather', state.name]">
+            <img mat-card-image [src]="state.image" [alt]="state.name">
+            <mat-card-content>
+              <mat-card-title class="text-center">{{state.name}}</mat-card-title>
+            </mat-card-content>
+            <mat-card-actions fxLayout="column" fxLayoutAlign="space-around stretch">
+              <button mat-raised-button [routerLink]="['weather', state.name]" color="primary">Open Weather</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+  </div>
+</div>
+
+    

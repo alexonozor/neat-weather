@@ -1,27 +1,43 @@
-# Weather
+# Neat Weather
+[](https://res.cloudinary.com/sportbay-co/image/upload/v1569912897/Screenshot_2019-10-01_at_7.52.35_AM_out9mw.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+### Descriptions
+Neat Weather is a weather forecast software specifically for 5 mega cities in Europe; __Rome, Amsterdam, London, Berlin, Paris__.
+Neat Weather can forecast 5 days weather from the current time in any of the above cities in the intervals of 3 hours.
 
-## Development server
+This applications is built with __Angular 8, Angular material, Chartjs__, it solely communicates it's forecasts using open weathers API.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Neat Weather is very responsive i.e it's mobile friendly since most users in the world uses their mobile phone for weather checking.
 
-## Code scaffolding
+[](https://res.cloudinary.com/sportbay-co/image/upload/v1569912896/Screenshot_2019-09-30_at_3.22.40_PM_w4jcpp.png)
+[](https://res.cloudinary.com/sportbay-co/image/upload/v1569912954/Screenshot_2019-10-01_at_7.55.26_AM_ymxxfr.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### Installations
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Clone this repository and change directory into it:
+`git clone  && cd neat-weather`
 
-## Running unit tests
+Install modules using NPM
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`npm install`
 
-## Running end-to-end tests
+As mentioned above Neat Weather uses Open Weather API for it forecasts communications, Open weather requires an appkey, click here to generate one or use my sample key below.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+`b6907d289e10d714a6e88b30761fae22`
 
-## Further help
+Add key to your environment  `environments/environment.ts` file depending on your current env
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Star the server: `npm serve`
+
+
+### Testing
+
+There isn't any form of test spec writing for Neat Weather, it's a small application with only one feature module. Furthermore, there's any
+plan to add more features.
+
+
+
+
+

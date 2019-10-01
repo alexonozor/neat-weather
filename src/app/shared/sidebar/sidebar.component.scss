@@ -32,14 +32,8 @@
   .contents {
     padding: 70px 16px;
   }
+
+  .active {
+    background: rgba(0,0,0,.04);
+  }
 }
-
-  .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-
-

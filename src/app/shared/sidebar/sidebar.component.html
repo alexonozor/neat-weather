@@ -1,0 +1,12 @@
+<div class="contents">
+  <mat-nav-list disableRipple="true">
+    <mat-list-item>
+      <a mat-line routerLink="">Home</a>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <h3 mat-subheader>Select Cities</h3>
+    <mat-list-item *ngFor="let state of states" routerLinkActive="active" [routerLink]="['weather', state.name]">
+      <a mat-line >{{state.name}}</a>
+    </mat-list-item>
+  </mat-nav-list>
+</div>

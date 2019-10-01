@@ -1,0 +1,27 @@
+<ng-container *ngIf="isLoading; else forecast">
+  <mat-progress-bar mode="buffer" color="primary"></mat-progress-bar>
+</ng-container>
+
+<ng-template #forecast>
+  <mat-tab-group>
+    <mat-tab label="Graph" ngClass.xs="hide-on-device">
+      <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+        [legend]="barChartLegend" [chartType]="barChartType">
+      </canvas>
+    </mat-tab>
+    <mat-tab label="Table">
+      <mat-list>
+        <mat-list-item *ngFor="let forecast of $selectedForecast?.list">
+          <img matListAvatar [src]="'http://openweathermap.org/img/wn/'+forecast.weather[0].icon+'.png'"
+            class="mat-list-avatar">
+          <h4 mat-line><b>{{forecast.weather[0].main}} {{forecast.weather[0].description}}</b></h4>
+          <p mat-line> {{forecast.dt_txt | date:'medium'}} </p>
+          <mat-chip-list>
+            <mat-chip style="width: 63px;">{{forecast.main.temp | number: '1.0-0'}} °C</mat-chip>
+          </mat-chip-list>
+          <mat-divider></mat-divider>
+        </mat-list-item>
+      </mat-list>
+    </mat-tab>
+  </mat-tab-group>
+</ng-template>
