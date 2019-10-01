@@ -1,5 +1,5 @@
 # Neat Weather
-[](https://res.cloudinary.com/sportbay-co/image/upload/v1569912897/Screenshot_2019-10-01_at_7.52.35_AM_out9mw.png)
+![](https://res.cloudinary.com/sportbay-co/image/upload/c_scale,h_409/v1569912897/Screenshot_2019-10-01_at_7.52.35_AM_out9mw.png)
 
 ### Descriptions
 Neat Weather is a weather forecast software specifically for 5 mega cities in Europe; __Rome, Amsterdam, London, Berlin, Paris__.
@@ -9,8 +9,7 @@ This applications is built with __Angular 8, Angular material, Chartjs__, it sol
 
 Neat Weather is very responsive i.e it's mobile friendly since most users in the world uses their mobile phone for weather checking.
 
-[](https://res.cloudinary.com/sportbay-co/image/upload/v1569912896/Screenshot_2019-09-30_at_3.22.40_PM_w4jcpp.png)
-[](https://res.cloudinary.com/sportbay-co/image/upload/v1569912954/Screenshot_2019-10-01_at_7.55.26_AM_ymxxfr.png)
+![](https://res.cloudinary.com/sportbay-co/image/upload/c_scale,h_409/v1569912954/Screenshot_2019-10-01_at_7.55.26_AM_ymxxfr.png)
 
 
 ### Installations
