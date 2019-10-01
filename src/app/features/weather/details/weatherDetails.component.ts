@@ -1,15 +1,12 @@
 import { Component, OnInit, OnDestroy, ViewChild, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable, timer, of, Subscription, BehaviorSubject } from 'rxjs';
-import { switchMap, map, tap, catchError, finalize, takeWhile, repeatWhen, delay } from 'rxjs/operators';
+import { Observable, Subscription, BehaviorSubject } from 'rxjs';
+import { switchMap, map, tap, finalize } from 'rxjs/operators';
 import { WeatherService } from '../../../core/services/weather/weather.service';
 import { WeatherModel } from '../../../core/services/weather/weather.model';
 import { MatDrawer } from '@angular/material';
 import { SidenavService } from '../../../core/services/sidebar/sidebar.service';
 import { BreakpointObserver } from '@angular/cdk/layout';
-
-
-
 
 @Component({
   selector: 'app-weather-details',
@@ -60,9 +57,6 @@ export class WeatherDetailsComponent implements OnInit {
       this.sidenav.open();
     }
   }
-
-
-
 
   viewForecast(cityId) {
     this.viewForecasts = true;
